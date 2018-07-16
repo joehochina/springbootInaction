@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="readinglist.mapper.UserMapper">
+    <select id="findAll" resultType="readinglist.domain.User">
+        select user_id as id,user_code as code,user_name as name,user_password as password,user_state as state from sys_user
+    </select>
+</mapper>
